@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BTP</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="city_prompt">Choose a City</string>
+    <string-array name="city_arrays">
+        
+        <item>Bangalore</item>
+        <item>Gwalior</item>
+        <item>Noida</item>
+        <item>Mumbai</item>
+    </string-array>
+
+</resources>
+
+ 
+ 
+  

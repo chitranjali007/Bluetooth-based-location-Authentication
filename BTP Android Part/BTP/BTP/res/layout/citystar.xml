@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="233dp"
+        android:layout_height="34dp"
+        android:text="                    SELECT CITY"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="300dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/city_arrays"
+        android:prompt="@string/city_prompt"
+        android:textAlignment="center" />
+            
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.67" >
+          
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentRight="true" >
+
+        </ListView>
+
+      
+
+    </RelativeLayout>
+
+</LinearLayout>

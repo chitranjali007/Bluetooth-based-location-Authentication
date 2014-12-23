@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnYes"
+            android:layout_alignRight="@+id/textView2"
+            android:background="@drawable/red_button"
+            android:text="No" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/red_button"
+            android:text="Yes" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnNo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp"
+            android:text="Are You In The Same Location"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/Clocation"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp"
+            android:textSize="30dp"
+            android:text="          TextView" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Clocation"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_marginTop="44dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:text="A person is Trying to claim his/her location.Verify." />
+
+    </RelativeLayout>
+
+</LinearLayout>

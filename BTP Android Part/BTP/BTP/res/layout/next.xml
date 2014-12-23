@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gui.MainActivity"
+    tools:ignore="MergeRootFrame"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+        
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="19dp"
+            android:layout_marginRight="44dp"
+            android:src="@drawable/registerlogo"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/button1"
+            android:layout_marginRight="28dp"
+            android:layout_toLeftOf="@+id/button1"
+            android:src="@drawable/loginlogo"
+            android:text="Button" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv1"
+            android:layout_alignRight="@+id/button1"
+            android:layout_marginBottom="29dp"
+            android:ems="10"
+            android:hint="PASSWORD"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/UserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Password"
+            android:layout_alignLeft="@+id/Password"
+            android:layout_marginBottom="28dp"
+            android:ems="10"
+            android:hint="USERNAME"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+
